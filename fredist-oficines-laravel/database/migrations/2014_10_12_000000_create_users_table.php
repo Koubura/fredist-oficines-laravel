@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('category')->nullable();
             $table->integer('free_days');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

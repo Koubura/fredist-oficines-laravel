@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
                 'name' => 'Fabio',
                 'surname' => 'Valencia',
                 'username' => 'fabio',
-                'password' => '6454',
+                'password' => bcrypt('6454'),
                 'category' => 'Admin',
                 'free_days' => '0'
             ]
@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
                 'name' => 'Natalia',
                 'surname' => 'Valencia',
                 'username' => 'natalia',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-junior',
                 'free_days' => '24'
             ]
@@ -44,7 +44,7 @@ class UserSeeder extends Seeder
                 'name' => 'Judit',
                 'surname' => 'Santigosa',
                 'username' => 'judit',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Senior',
                 'free_days' => '24'
             ]
@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
                 'name' => 'Marta',
                 'surname' => 'Pujols',
                 'username' => 'marta',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Directora',
                 'free_days' => '24'
             ]
@@ -68,7 +68,7 @@ class UserSeeder extends Seeder
                 'name' => 'Sara',
                 'surname' => 'Güera',
                 'username' => 'sara',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
@@ -80,7 +80,7 @@ class UserSeeder extends Seeder
                 'name' => 'Rosa',
                 'surname' => 'Verdejo',
                 'username' => 'rosa',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
@@ -92,7 +92,7 @@ class UserSeeder extends Seeder
                 'name' => 'Xevi',
                 'surname' => 'Capdevila',
                 'username' => 'xevi',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
@@ -104,7 +104,7 @@ class UserSeeder extends Seeder
                 'name' => 'Katy',
                 'surname' => 'Sandino',
                 'username' => 'katy',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Junior',
                 'free_days' => '24'
             ]
@@ -116,7 +116,7 @@ class UserSeeder extends Seeder
                 'name' => 'Jihane',
                 'surname' => 'El hanouti',
                 'username' => 'jihane',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
@@ -128,7 +128,7 @@ class UserSeeder extends Seeder
                 'name' => 'Francesc',
                 'surname' => 'Espinosa',
                 'username' => 'espi',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Gerent',
                 'free_days' => '0'
             ]
@@ -140,7 +140,7 @@ class UserSeeder extends Seeder
                 'name' => 'Joan',
                 'surname' => 'Casanovas',
                 'username' => 'joan',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Gerent',
                 'free_days' => '0'
             ]
@@ -152,7 +152,7 @@ class UserSeeder extends Seeder
                 'name' => 'Ian',
                 'surname' => 'Ferrer',
                 'username' => 'ian',
-                'password' => '1234',
+                'password' => bcrypt('1234'),
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
