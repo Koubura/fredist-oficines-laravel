@@ -31,16 +31,33 @@ class User extends Authenticatable implements JWTSubject
     ];
 
     protected $appends = [
-        'role'
+        'role',
+        'calendar'
+    ];
+
+    protected $with = [
+        'skills'
     ];
 
     public function role() {
         return $this->belongsTo(Role::class);
     }
 
+    public function skills() {
+        return $this->belongsToMany(Task::class,'skills','user_id','task_id');
+    }
+
+    public function calendar() {
+        return $this->hasMany(Calendar::class);
+    }
+
     public function getRoleAttribute () {
         if(!is_null($this->role_id)) return RoleRepository::show($this->role_id)->name;
         else return "Sense rol";
+    }
+
+    public function getCalendarAttribute () {
+        return $this->calendar()->orderBy('day','DESC')->take(14)->get();
     }
 
     /**

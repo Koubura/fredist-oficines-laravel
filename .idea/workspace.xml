@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155032_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155032_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_160138_user_rol_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155016_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155016_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610206926290</updated>
-      <workItem from="1610206927504" duration="7752000" />
+      <workItem from="1610206927504" duration="10717000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610213053521</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor role">
+      <created>1610214720295</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610214720296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +122,7 @@
     <MESSAGE value="migration Role and User done" />
     <MESSAGE value="Seeders role and user" />
     <MESSAGE value="Auth with username" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth with username" />
+    <MESSAGE value="Refactor role" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor role" />
   </component>
 </project>

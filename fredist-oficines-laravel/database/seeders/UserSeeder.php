@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::create(
+        $fabio = User::create(
             [
                 'name' => 'Fabio',
                 'surname' => 'Valencia',
@@ -27,6 +27,7 @@ class UserSeeder extends Seeder
                 'free_days' => '0'
             ]
         );
+        $fabio->skills()->attach(1, ['value' => 10]);
 
         User::create(
             [

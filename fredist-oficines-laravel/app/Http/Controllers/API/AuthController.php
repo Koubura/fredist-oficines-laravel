@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -63,6 +67,16 @@ class AuthController extends Controller
     public function refresh()
     {
         return $this->respondWithToken(auth()->refresh());
+    }
+
+    public function changePassword(Request $request) {
+        $username = $request->username;
+        $password = $request->password;
+
+        User::where("username", $username)->update(["password" => bcrypt($password)]);
+        return response()->json([
+            "data" => "Password changed"
+        ], Response::HTTP_OK);
     }
 
     /**
