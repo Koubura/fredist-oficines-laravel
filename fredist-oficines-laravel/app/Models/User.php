@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Repositories\RoleRepository;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -17,7 +18,7 @@ class User extends Authenticatable implements JWTSubject
      *
      * @var array
      */
-    protected $fillable = ['name', 'surname', 'password', 'username', 'password', 'category', 'free_days'];
+    protected $fillable = ['name', 'surname', 'password', 'username', 'password', 'role_id', 'category', 'free_days'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -26,10 +27,20 @@ class User extends Authenticatable implements JWTSubject
      */
     protected $hidden = [
         'remember_token',
+        'role_id'
+    ];
+
+    protected $appends = [
+        'role'
     ];
 
     public function role() {
-        return $this->belongsToMany(Role::class, 'user_rol', 'user_id', 'role_id');
+        return $this->belongsTo(Role::class);
+    }
+
+    public function getRoleAttribute () {
+        if(!is_null($this->role_id)) return RoleRepository::show($this->role_id)->name;
+        else return "Sense rol";
     }
 
     /**

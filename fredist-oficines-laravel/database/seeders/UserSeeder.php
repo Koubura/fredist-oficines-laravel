@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Repositories\RoleRepository;
+use App\Repositories\UserRepository;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -15,149 +16,149 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $fabio = User::create(
+        User::create(
             [
                 'name' => 'Fabio',
                 'surname' => 'Valencia',
                 'username' => 'fabio',
                 'password' => bcrypt('6454'),
+                'role_id' => RoleRepository::findByName('admin')->id,
                 'category' => 'Admin',
                 'free_days' => '0'
             ]
         );
-        $fabio->role()->attach(RoleRepository::findByName('admin')->id);
 
-        $natalia = User::create(
+        User::create(
             [
                 'name' => 'Natalia',
                 'surname' => 'Valencia',
                 'username' => 'natalia',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-junior',
                 'free_days' => '24'
             ]
         );
-        $natalia->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $judit = User::create(
+        User::create(
             [
                 'name' => 'Judit',
                 'surname' => 'Santigosa',
                 'username' => 'judit',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Senior',
                 'free_days' => '24'
             ]
         );
-        $judit->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $marta = User::create(
+        User::create(
             [
                 'name' => 'Marta',
                 'surname' => 'Pujols',
                 'username' => 'marta',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('visitor')->id,
                 'category' => 'Directora',
                 'free_days' => '24'
             ]
         );
-        $marta->role()->attach(RoleRepository::findByName('visitor')->id);
 
-        $sara = User::create(
+        User::create(
             [
                 'name' => 'Sara',
                 'surname' => 'Güera',
                 'username' => 'sara',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
         );
-        $sara->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $rosa = User::create(
+        User::create(
             [
                 'name' => 'Rosa',
                 'surname' => 'Verdejo',
                 'username' => 'rosa',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
         );
-        $rosa->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $xevi = User::create(
+        User::create(
             [
                 'name' => 'Xevi',
                 'surname' => 'Capdevila',
                 'username' => 'xevi',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
         );
-        $xevi->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $katy = User::create(
+        User::create(
             [
                 'name' => 'Katy',
                 'surname' => 'Sandino',
                 'username' => 'katy',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Junior',
                 'free_days' => '24'
             ]
         );
-        $katy->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $jihane = User::create(
+        User::create(
             [
                 'name' => 'Jihane',
                 'surname' => 'El hanouti',
                 'username' => 'jihane',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
         );
-        $jihane->role()->attach(RoleRepository::findByName('employee')->id);
 
-        $espi = User::create(
+        User::create(
             [
                 'name' => 'Francesc',
                 'surname' => 'Espinosa',
                 'username' => 'espi',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('visitor')->id,
                 'category' => 'Gerent',
                 'free_days' => '0'
             ]
         );
-        $espi->role()->attach(RoleRepository::findByName('visitor')->id);
 
-        $joan = User::create(
+        User::create(
             [
                 'name' => 'Joan',
                 'surname' => 'Casanovas',
                 'username' => 'joan',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('visitor')->id,
                 'category' => 'Gerent',
                 'free_days' => '0'
             ]
         );
-        $joan->role()->attach(RoleRepository::findByName('visitor')->id);
 
-        $ian = User::create(
+        User::create(
             [
                 'name' => 'Ian',
                 'surname' => 'Ferrer',
                 'username' => 'ian',
                 'password' => bcrypt('1234'),
+                'role_id' => RoleRepository::findByName('employee')->id,
                 'category' => 'Semi-senior',
                 'free_days' => '24'
             ]
         );
-        $ian->role()->attach(RoleRepository::findByName('employee')->id);
 
     }
 }

@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155032_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155032_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_160138_user_rol_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610206926290</updated>
-      <workItem from="1610206927504" duration="6086000" />
+      <workItem from="1610206927504" duration="7752000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610211760599</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Auth with username">
+      <created>1610213053521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610213053521</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +112,7 @@
     <MESSAGE value="Created DB" />
     <MESSAGE value="migration Role and User done" />
     <MESSAGE value="Seeders role and user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeders role and user" />
+    <MESSAGE value="Auth with username" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth with username" />
   </component>
 </project>

@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('surname')->nullable();
             $table->string('username');
             $table->string('password');
+            $table->unsignedBigInteger('role_id')->nullable();
             $table->string('category')->nullable();
             $table->integer('free_days');
             $table->rememberToken();
