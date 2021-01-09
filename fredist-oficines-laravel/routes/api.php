@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResources([
+    "users" => \App\Http\Controllers\API\UserController::class,
+    "calendars" => \App\Http\Controllers\CalendarController::class,
+    "roles" => \App\Http\Controllers\API\RoleController::class,
+    "tasks" => \App\Http\Controllers\API\TaskController::class,
+    "auth" => \App\Http\Controllers\API\AuthController::class,
+]);

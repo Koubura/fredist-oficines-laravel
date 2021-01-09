@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/CalendarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/RoleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/SkillController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Skill.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155003_create_skills_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155016_create_tasks_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155025_create_calendars_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155032_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_160138_user_rol_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/CalendarRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/RoleRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/SkillRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/TaskRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/CalendarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/CalendarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/SkillController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/SkillController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mq2iKdjI3p4HjzIWaV4Sez9jFp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,8 +40,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610206926290</updated>
-      <workItem from="1610206927504" duration="1594000" />
+      <workItem from="1610206927504" duration="4522000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -58,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610207085403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created DB">
+      <created>1610208525730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610208525731</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

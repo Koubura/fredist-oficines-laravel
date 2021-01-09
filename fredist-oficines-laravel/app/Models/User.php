@@ -16,11 +16,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['name', 'surname', 'password', 'username', 'password', 'category', 'free_days'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -28,16 +24,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function role() {
+        return $this->belongsToMany(Role::class, 'user_rol', 'user_id', 'role_id');
+    }
 }
