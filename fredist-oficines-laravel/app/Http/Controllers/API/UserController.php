@@ -99,4 +99,14 @@ class UserController extends Controller
 
         return response()->json($data);
     }
+
+    public function addUserTaskValue($idUser, $idTask, Request $request) {
+        try {
+            $data = UserRepository::addUserTaskValue($idUser, $idTask, $request->value);
+        } catch (\Exception $e) {
+            return response()->json(["error" => $e->getMessage()], 400);
+        }
+
+        return response()->json($data);
+    }
 }

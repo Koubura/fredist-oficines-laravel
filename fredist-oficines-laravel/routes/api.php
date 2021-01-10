@@ -30,3 +30,5 @@ Route::apiResources([
     "tasks" => \App\Http\Controllers\API\TaskController::class,
     "auth" => \App\Http\Controllers\API\AuthController::class,
 ]);
+
+Route::post('user-task/{idUser}/{idTask}', [\App\Http\Controllers\API\UserController::class, 'addUserTaskValue']);

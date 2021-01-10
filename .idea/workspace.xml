@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/fredist-oficines-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fredist-oficines-laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/CalendarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/CalendarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/SkillController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/SkillController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/TaskController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Skill.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Skill.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155003_create_skills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/database/migrations/2021_01_09_155003_create_skills_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/fredist-oficines-laravel/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -171,7 +167,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610206926290</updated>
       <workItem from="1610206927504" duration="11518000" />
-      <workItem from="1610273664187" duration="4849000" />
+      <workItem from="1610273664187" duration="5100000" />
+      <workItem from="1610288927002" duration="3547000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -229,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610217848799</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixing errors">
+      <created>1610285634356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610285634356</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +260,7 @@
     <MESSAGE value="Refactor role" />
     <MESSAGE value="Added calendar and task to rerturn user + change password" />
     <MESSAGE value="Auth to controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth to controllers" />
+    <MESSAGE value="Fixing errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing errors" />
   </component>
 </project>

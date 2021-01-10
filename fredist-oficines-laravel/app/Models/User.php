@@ -31,7 +31,8 @@ class User extends Authenticatable implements JWTSubject
 
     protected $appends = [
         'role',
-        'calendar'
+        'calendar',
+        'tasks_ids'
     ];
 
     protected $with = [
@@ -48,6 +49,14 @@ class User extends Authenticatable implements JWTSubject
 
     public function calendar() {
         return $this->hasMany(Calendar::class);
+    }
+
+    public function getTasksIdsAttribute() {
+        $res = [];
+        foreach($this->skills as $w) {
+            array_push($res, $w->id);
+        }
+        return $res;
     }
 
     public function getRoleAttribute () {

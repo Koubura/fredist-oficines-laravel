@@ -16,7 +16,7 @@ class CreateSkillsTable extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('task_id');
-            $table->integer('value');
+            $table->integer('value')->default(2);
         });
     }
 

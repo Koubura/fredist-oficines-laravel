@@ -4,6 +4,7 @@
 namespace App\Repositories;
 
 
+use App\Models\Task;
 use App\Models\User;
 
 class UserRepository
@@ -27,13 +28,25 @@ class UserRepository
         $user = User::findOrFail($id);
         $user->update($data);
         $user->refresh();
-        return $user;
+
+        if(isset($data["tasks_ids"])) {
+            $user->skills()->sync($data["tasks_ids"]); //actualitzem relació
+        }
+
+        return self::show($id);
     }
 
     public static function destroy($id) {
         $user = User::findOrFail($id);
         $user->delete();
         return $user;
+    }
+
+    public static function addUserTaskValue($idUser, $idTask, $value) {
+        $user = self::show($idUser);
+        $user->skills()->attach($idTask, ['value' => $value]);
+
+        return self::show($idUser);
     }
 
 
