@@ -85,7 +85,7 @@ class SkillController extends Controller
     public function destroy(Skill $skill)
     {
         try {
-            $data = SkillRepository::delete($skill->id);
+            $data = SkillRepository::destroy($skill->id);
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }

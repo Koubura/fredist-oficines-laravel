@@ -24,8 +24,8 @@ class UserRepository
     }
 
     public static function update($id, array $data) {
-        $data['password'] = bcrypt($data['password']);
         $user = User::findOrFail($id);
+        if($data['password']!=$user->password) $data['password'] = bcrypt($data['password']);
         $user->update($data);
         $user->refresh();
 

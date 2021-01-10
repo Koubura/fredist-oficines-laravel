@@ -85,7 +85,7 @@ class TaskController extends Controller
     public function destroy(Task $task)
     {
         try {
-            $data = TaskRepository::delete($task->id);
+            $data = TaskRepository::destroy($task->id);
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }

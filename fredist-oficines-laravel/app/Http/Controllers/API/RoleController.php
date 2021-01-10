@@ -85,7 +85,7 @@ class RoleController extends Controller
     public function destroy(Role $role)
     {
         try {
-            $data = RoleRepository::delete($role->id);
+            $data = RoleRepository::destroy($role->id);
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }

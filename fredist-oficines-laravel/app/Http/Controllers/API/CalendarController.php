@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Models\Calendar;
+use App\Repositories\CalendarRepository;
 use Illuminate\Http\Request;
 
 class CalendarController extends Controller
@@ -83,7 +84,7 @@ class CalendarController extends Controller
     public function destroy(Calendar $calendar)
     {
         try {
-            $data = CalendarRepository::delete($calendar->id);
+            $data = CalendarRepository::destroy($calendar->id);
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }
