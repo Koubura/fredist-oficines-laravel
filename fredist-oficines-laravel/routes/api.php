@@ -25,7 +25,7 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 
 Route::apiResources([
     "users" => \App\Http\Controllers\API\UserController::class,
-    "calendars" => \App\Http\Controllers\CalendarController::class,
+    "calendars" => \App\Http\Controllers\API\CalendarController::class,
     "roles" => \App\Http\Controllers\API\RoleController::class,
     "tasks" => \App\Http\Controllers\API\TaskController::class,
     "auth" => \App\Http\Controllers\API\AuthController::class,

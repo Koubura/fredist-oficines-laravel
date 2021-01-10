@@ -4,10 +4,9 @@
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/CalendarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/CalendarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/SkillController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/SkillController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Http/Controllers/API/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/Calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/CalendarRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/CalendarRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,7 @@
       <workItem from="1610206927504" duration="11518000" />
       <workItem from="1610273664187" duration="5100000" />
       <workItem from="1610288927002" duration="3815000" />
-      <workItem from="1610299064921" duration="1513000" />
+      <workItem from="1610299064921" duration="6166000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610294662286</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix errors tasks">
+      <created>1610301546508</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610301546508</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +276,8 @@
     <MESSAGE value="Auth to controllers" />
     <MESSAGE value="Fixing errors" />
     <MESSAGE value="[WIP]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[WIP]" />
+    <MESSAGE value="fix errors tasks" />
+    <MESSAGE value="Calendar fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calendar fix" />
   </component>
 </project>

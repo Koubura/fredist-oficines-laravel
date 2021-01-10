@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Http\Controllers\Controller;
 use App\Models\Calendar;
 use App\Repositories\CalendarRepository;
 use Illuminate\Http\Request;
@@ -12,10 +13,10 @@ class CalendarController extends Controller
         $this->middleware('auth:api');
     }
 
-    public function index()
+    public function index(Request $request)
     {
         try {
-            $data = CalendarRepository::index();
+            $data = CalendarRepository::index($request->query());
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }

@@ -5,11 +5,20 @@ namespace App\Repositories;
 
 
 use App\Models\Calendar;
+use Carbon\Carbon;
 
 class CalendarRepository
 {
 
-    public static function index() {
+    public static function index(array $params = []) {
+        if(isset($params['day']) && trim($params['day'])!="") {
+            $day = $params['day'];
+            $c = Calendar::whereDate("day", $day)->get();
+            return [
+                "calendars" => $c,
+                "chart" => self::returnToGraph($c)
+            ];
+        }
         return Calendar::all();
     }
 
@@ -34,5 +43,25 @@ class CalendarRepository
         return $calendar;
     }
 
+    public static function returnToGraph($calendar) {
+        $result = [];
+        foreach ($calendar as $c) {
+            $element = [
+                "name" => $c['userName'],
+                "series" => [
+                    [
+                        "name" => "transparent",
+                        "value" => (int)(date('H',strtotime($c['start_time'])) . date('i',strtotime($c['start_time'])) . date('s',strtotime($c['start_time'])))
+                    ],
+                    [
+                        "name" => "periode",
+                        "value" => (int)(date('H',strtotime($c['end_time'])) . date('i',strtotime($c['end_time'])) . date('s',strtotime($c['end_time'])))
+                    ]
+                ]
+            ];
 
+            array_push($result,$element);
+        }
+        return $result;
+    }
 }

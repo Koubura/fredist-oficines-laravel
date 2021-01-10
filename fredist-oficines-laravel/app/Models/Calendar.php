@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Repositories\UserRepository;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +16,7 @@ class Calendar extends Model
     ];
 
     protected $appends = [
-      'dayOfTheWeek'
+      'dayOfTheWeek', 'userName'
     ];
 
     protected function getDayOfTheWeekAttribute() {
@@ -32,5 +33,9 @@ class Calendar extends Model
         ];
 
         return $days[$day];
+    }
+
+    protected function getUserNameAttribute() {
+        return UserRepository::show($this->user_id)->name;
     }
 }
