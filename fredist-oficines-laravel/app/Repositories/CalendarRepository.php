@@ -46,6 +46,9 @@ class CalendarRepository
     public static function returnToGraph($calendar) {
         $result = [];
         foreach ($calendar as $c) {
+            $h = ((int)date('H',strtotime($c['end_time'])) - (int)date('H',strtotime($c['start_time'])));
+            $i = ((int)date('i',strtotime($c['end_time'])) - (int)date('i',strtotime($c['start_time'])));
+            $s = ((int)date('s',strtotime($c['end_time'])) - (int)date('s',strtotime($c['start_time'])));
             $element = [
                 "name" => $c['userName'],
                 "series" => [
@@ -55,7 +58,11 @@ class CalendarRepository
                     ],
                     [
                         "name" => "periode",
-                        "value" => (int)(date('H',strtotime($c['end_time'])) . date('i',strtotime($c['end_time'])) . date('s',strtotime($c['end_time'])))
+                        "value" => (int)(
+                            ($h<=0 ? '00' : ($h<10 ? '0'.$h : $h)) .
+                            ($i<=0 ? '00' : ($i<10 ? '0'.$i : $i)) .
+                            ($s<=0 ? '00' : ($s<10 ? '0'.$s : $s))
+                        )
                     ]
                 ]
             ];
