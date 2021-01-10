@@ -92,7 +92,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         try {
-            $data = UserRepository::delete($user->id);
+            $data = UserRepository::destroy($user->id);
         } catch (\Exception $e) {
             return response()->json(["error" => $e->getMessage()], 400);
         }

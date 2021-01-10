@@ -26,8 +26,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $hidden = [
-        'remember_token',
-        'role_id'
+        'remember_token'
     ];
 
     protected $appends = [
@@ -44,7 +43,7 @@ class User extends Authenticatable implements JWTSubject
     }
 
     public function skills() {
-        return $this->belongsToMany(Task::class,'skills','user_id','task_id');
+        return $this->belongsToMany(Task::class,'skills','user_id','task_id')->withPivot('value');;
     }
 
     public function calendar() {

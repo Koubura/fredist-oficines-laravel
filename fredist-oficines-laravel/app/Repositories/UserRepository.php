@@ -14,6 +14,7 @@ class UserRepository
     }
 
     public static function store(array $data) {
+        $data['password'] = bcrypt($data['password']);
         return User::create($data);
     }
 
@@ -22,6 +23,7 @@ class UserRepository
     }
 
     public static function update($id, array $data) {
+        $data['password'] = bcrypt($data['password']);
         $user = User::findOrFail($id);
         $user->update($data);
         $user->refresh();
