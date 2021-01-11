@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="888527ea-1d67-4624-b83c-398a271a4d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/CalendarRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/fredist-oficines-laravel/app/Repositories/CalendarRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +166,10 @@
       <workItem from="1610206927504" duration="11518000" />
       <workItem from="1610273664187" duration="5100000" />
       <workItem from="1610288927002" duration="3815000" />
-      <workItem from="1610299064921" duration="6574000" />
+      <workItem from="1610299064921" duration="6637000" />
+      <workItem from="1610351552483" duration="634000" />
+      <workItem from="1610375605431" duration="884000" />
+      <workItem from="1610389136440" duration="2870000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610207085403</created>
@@ -251,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610308135056</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix hours">
+      <created>1610308579175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610308579176</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +293,8 @@
     <MESSAGE value="[WIP]" />
     <MESSAGE value="fix errors tasks" />
     <MESSAGE value="Calendar fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calendar fix" />
+    <MESSAGE value="fix hours" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

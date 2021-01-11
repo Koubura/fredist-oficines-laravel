@@ -45,6 +45,15 @@ class CalendarRepository
 
     public static function returnToGraph($calendar) {
         $result = [];
+        array_push($result,[
+            "name" => '',
+            "series" => [
+                [
+                    "name" => "transparent",
+                    "value" => '240000'
+                ]
+            ]
+        ]);
         foreach ($calendar as $c) {
             $h = ((int)date('H',strtotime($c['end_time'])) - (int)date('H',strtotime($c['start_time'])));
             $i = ((int)date('i',strtotime($c['end_time'])) - (int)date('i',strtotime($c['start_time'])));
@@ -62,13 +71,19 @@ class CalendarRepository
                             ($h<=0 ? '00' : ($h<10 ? '0'.$h : $h)) .
                             ($i<=0 ? '00' : ($i<10 ? '0'.$i : $i)) .
                             ($s<=0 ? '00' : ($s<10 ? '0'.$s : $s))
-                        )
+                        ),
+                        "horari" => (date('H',strtotime($c['start_time'])) . ":" . date('i',strtotime($c['start_time'])) . ":" . date('s',strtotime($c['start_time'])))
+                                    . " - " .
+                                    (date('H',strtotime($c['end_time'])) . ":" . date('i',strtotime($c['end_time'])) . ":" . date('s',strtotime($c['end_time'])))
                     ]
                 ]
             ];
 
             array_push($result,$element);
         }
+
+        if(count($result)==1) $result = [];
+
         return $result;
     }
 }

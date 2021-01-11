@@ -31,7 +31,6 @@ class User extends Authenticatable implements JWTSubject
 
     protected $appends = [
         'role',
-        'calendar',
         'tasks_ids'
     ];
 
